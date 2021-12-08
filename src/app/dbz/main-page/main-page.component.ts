@@ -23,11 +23,9 @@ export class MainPageComponent{
     poder: 13000,
   }
 
-  agregar() {
-    if(this.nuevo.nombre.trim().length === 0){
-      return;
-    }
-    this.personajes.push(this.nuevo);
-    this.nuevo = {nombre: '', poder: 0};
+  agregarNuevoPersonaje( nuevoPersonaje: Personaje){
+    console.log(nuevoPersonaje);
+    this.personajes.push(nuevoPersonaje);
   }
+
 }
